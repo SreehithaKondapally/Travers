@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="taj.css">
+    <title>Travers</title>
+</head>
+
+<body>
+    <div>
+        <div class="row">
+            <div class="col-12">
+
+   
+    <div id="sectionHome">
+        <div class="bg-container d-flex flex-column justify-content-center">
+           
+            <div class="text-center">
+                <h1 class="main-heading">Explore The Tour</h1>
+                <p class="paragraph">Plan your trip.</p>
+                <button class="button" onclick="display('sectionCountry')">Get Started</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="sectionCountry">
+        <div class="bg-container1">
+            <h1 class="main-headingPlace">Best Places To Visit In India</h1>
+            <img src="https://static.euronews.com/articles/stories/05/36/83/90/1440x810_cmsv2_6187d843-7037-5073-92f1-c3a894a93ba2-5368390.jpg" class="imageplaces w-100" onclick="display('sectionVisitingPlaces')" />
+            <button class="btn btn-dark" onclick="display('sectionHome')">Back</button>
+        </div>
+    </div>
+
+    <div>
+        <div id="sectionVisitingPlaces">
+            <div class="favourite-places-bg-container p-4">
+                <h1 class="favourite-places-heading">Most Popular Places in India </h1>
+                <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionLadakhDetailedView')">
+                    <div>
+                        <h1 class="favourite-place-card-heading">Ladakh</h1>
+                        <p class="favourite-place-card-description">
+                            Ladakh is the highest plateau in India with most of it being over 3,000 m (9,800 ft).
+                            · Historically, the region included the
+                        </p>
+                    </div>
+                    <img src="https://assets.cntraveller.in/photos/60ba11f73ff1eb236f5a730c/16:9/w_1024%2Cc_limit/LadakhLead.jpg" class="favourite-place-card-image" />
+                </div>
+                <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionTajMahalDetailedView')">
+                    <div>
+                        <h1 class="favourite-place-card-heading">Taj Mahal</h1>
+                        <p class="favourite-place-card-description">
+                            An immense mausoleum of white marble, built in Agra between 1631 and 1648 by order of the Mughal emperor Shah Jahan in memory of his favourite wife,
+                            the Taj Mahal is the jewel of Muslim art in India and one of
+                            the universally admired masterpieces of the world's heritage
+                        </p>
+                    </div>
+                    <img src="https://whc.unesco.org/uploads/thumbs/site_0252_0008-750-750-20151104113424.jpg" class="favourite-place-card-image" />
+                </div>
+                <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionGolcondaDetailedView')">
+                    <div>
+                        <h1 class="favourite-place-card-heading">Golconda Fort</h1>
+                        <p class="favourite-place-card-description">
+                            Golconda is a fortified citadel and ruined city located in the western outskirts of Hyderabad,
+                            Telangana, India. ... The fort was originally built by Kakatiya ...
+                        </p>
+                    </div>
+                    <img src="https://www.savaari.com/blog/wp-content/uploads/2022/10/Golkonda-fort.jpg" class="favourite-place-card-image" />
+                </div>
+
+                <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionGoldenTempleDetailedView')">
+                    <div>
+                        <h1 class="favourite-place-card-heading">Golden Temple</h1>
+                        <p class="favourite-place-card-description">
+                            The Golden temple is famous for its full golden dome,
+                            it is one of the most sacred pilgrim spots for Sikhs.
+                            The Mandir is built on a 67-ft square of marble and is a
+                            two storied structure. Maharaja Ranjit Singh had the upper
+                            half of the building built with approximately 400 kg of gold leaf.
+                        </p>
+                    </div>
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/golden-temple-img.png" class="favourite-place-card-image" />
+                </div>
+
+                <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionCharminarDetailedView')">
+                    <div>
+                        <h1 class="favourite-place-card-heading">Charminar</h1>
+                        <p class="favourite-place-card-description">
+                            The Charminar ( lit. 'four minarets') is a monument located in Hyderabad, Telangana, India. Constructed in 1591, the landmark is a symbol of Hyderabad and ...
+                            Location: Old City of Hyderabad‎, ‎Telangana‎, ‎I...‎
+                            Height (max): 56 metres (184 ft)
+                            Minaret height: 48.7 metres (160 ft)
+                            Year consecrated: 1591 (432 years ago)
+                        </p>
+                    </div>
+                    <img src="https://media.istockphoto.com/id/1215274990/photo/high-wide-angle-view-of-charminar-in-the-night.jpg?s=612x612&w=0&k=20&c=byyIjqgbslf-L191n6SJu0s35fvNoVeWsxV5rIPK7Sk=" class="favourite-place-card-image" />
+                </div>
+
+
+                <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionMunnarDetailedView')">
+                    <div>
+                        <h1 class="favourite-place-card-heading">Munnar</h1>
+                        <p class="favourite-place-card-description">
+                            Munnar is a town and hill station located in the
+                            Idukki district of the southwestern Indian state of Kerala. Munnar is situated at around 1,600 metres ...
+
+                        </p>
+                    </div>
+                    <img src="https://www.keralatourism.org/images/microsites/munnar/idukki-kerala.jpg" class="favourite-place-card-image" />
+                </div>
+                <button class="btn btn-dark" onclick="display('sectionCountry')">Back</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="sectionLadakhDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+                <div>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dPCyF9Q6ZJU" allowfullscreen style="border: 2px solid rgb(red, green, blue); border-radius: 8px;"></iframe>
+                    </div>
+                </div>
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading" onclick="display('sectionMapsladakh')">Ladakh</h1>
+                    <p class="detailed-view-card-description">
+                        For other uses, see Tourism (disambiguation).
+                        "Tourist" redirects here. For other uses, see Tourist (disambiguation).
+                        Tourists at the Temple of Apollo, Delphi, Greece
+                        Tourism is travel for pleasure, and the commercial activity of providing and supporting such travel.
+                        [1] The World Tourism Organization defines tourism more generally, in terms which go
+                        "beyond the common perception of tourism as being limited to holiday activity only",
+                        as people "travelling to and staying in places outside their usual environment for not
+                        more than one consecutive year for leisure and not less than 24 hours, business and other purposes".
+                        [2] Tourism can be domestic (within the traveller's own country) or international, and international
+                        tourism has both incoming and outgoing implications on a country's balance of payments.
+                        Tourism numbers declined as a result of a strong economic
+                        slowdown (the late-2000s recession) between the second half of 2008 and the end of 2009,
+                        and in consequence of the outbreak of the 2009 H1N1 influenza virus,[3][4] but slowly
+                        recovered until the COVID-19 pandemic put an abrupt end to the growth. The United Nations
+                        World Tourism Organization estimated that global international tourist arrivals might decrease by 58% to 78% in 2020,
+                        leading to a potential loss of US$0.9–1.2 trillion in international tourism receipts.[5]
+                    </p>
+                    <img src="https://png.pngtree.com/png-clipart/20211219/original/pngtree-map-location-icon-png-image_6968979.png" alt="map" class="map-icon"/>
+                    <a href="https://www.google.com/maps/place/Ladakh/@33.9769274,74.8038137,7z/data=!4m15!1m8!3m7!1s0x38fd86bce37d7139:0xc6c2990fdad28ac7!2sLadakh!3b1!8m2!3d34.2268475!4d77.5619419!16zL20vMDFzNmN5!3m5!1s0x38fd86bce37d7139:0xc6c2990fdad28ac7!8m2!3d34.2268475!4d77.5619419!16zL20vMDFzNmN5?entry=ttu" target="_blank" class="map">map</a>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionVisitingPlaces')">
+                Back
+            </button>
+        </div>
+    </div>
+
+
+    <div id="sectionTajMahalDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+                <div>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/49HTIoCccDY" allowfullscreen style="border: 2px solid rgb(red, green, blue); border-radius: 8px;"></iframe>
+                    </div>
+                </div>
+
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading" onclick="display('sectionMapstajmahal')">Taj Mahal</h1>
+                    <p class="detailed-view-card-description">
+                        The Taj Mahal is considered to be the greatest architectural achievement
+                        in the whole range of Indo-Islamic architecture. Its recognised
+                        architectonic beauty has a rhythmic combination of solids and voids,
+                        concave and convex and light shadow; such as arches and domes further
+                        increases the aesthetic aspect. Not a piece of architecture, as other
+                        buildings are, but the proud passions of an emperor’s love wrought in
+                        living stones.
+                    </p>
+                    <img src="https://png.pngtree.com/png-clipart/20211219/original/pngtree-map-location-icon-png-image_6968979.png" alt="map" class="map-icon"/>
+                    <a href="https://www.google.com/maps/place/Taj+Mahal/@27.1751411,78.0389024,16.67z/data=!4m6!3m5!1s0x39747121d702ff6d:0xdd2ae4803f767dde!8m2!3d27.1751448!4d78.0421422!16zL20vMGw4Y2I?entry=ttu" target="_blank" class="map">map</a>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionVisitingPlaces')">
+                Back
+            </button>
+        </div>
+    </div>
+
+
+    <div id="sectionGolcondaDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+                <div>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7gCbkTtj8YA" allowfullscreen style="border: 2px solid rgb(red, green, blue); border-radius: 8px;"></iframe>
+                    </div>
+                </div>
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading" onclick="display('sectionMapsgolconda')">Golconda</h1>
+                    <p class="detailed-view-card-description">
+                        The Golden Temple (also known as the Harimandir Sahib
+                        (lit. 'House of God', Punjabi pronunciation: [ɦəɾᵊmən̪d̪əɾᵊ saːɦ(ɪ)bᵊ])
+                        , or the Darbār Sahib, (lit. ''exalted court'', [d̪əɾᵊbaːɾᵊ saːɦ(ɪ)bᵊ
+                        ] or Suvaran Mandir[2]) is a gurdwara located in the city of Amritsar,
+                        Punjab, India.[3][4] It is the preeminent spiritual site of Sikhism.
+                        It is one of the holiest sites in Sikhism, alongside the Gurdwara Darbar Sahib Kartarpur in Kartarpur,
+                        and Gurdwara Janam Asthan in Nankana Sahib.
+                        The man-made pool on the site of the temple was completed
+                        by the fourth Sikh Guru, Guru Ram Das, in 1577.[6][7] In 1604,
+                        Guru Arjan Dev, the fifth Sikh Guru, placed a copy of the
+                        Adi Granth in Harmandir Sahib and is the prominent figure in the development
+                        of gurudwara who built it in the 16th century.[3][8] The Gurdwara was repeatedly
+                        rebuilt by the Sikhs after it became a target of persecution and was destroyed
+                        several times by the Mughal and invading Afghan armies.[3][5][9] Maharaja Ranjit
+                        Singh, after founding the Sikh Empire, rebuilt it in marble and copper in 1809,
+                        and overlaid the sanctum with gold leaf in 1830. This has led to the name the Golden Temple.[10][11][12
+                    </p>
+                    <img src="https://png.pngtree.com/png-clipart/20211219/original/pngtree-map-location-icon-png-image_6968979.png" alt="map" class="map-icon"/>
+                    <a href="https://www.google.com/maps/search/golconda+fort/@17.3810344,78.3802546,13.57z?entry=ttu" target="_blank" class="map">map</a>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionVisitingPlaces')">
+                Back
+            </button>
+        </div>
+    </div>
+
+    <div id="sectionGoldenTempleDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+                <div>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/m701WKQMeYQ" allowfullscreen style="border: 2px solid rgb(red, green, blue); border-radius: 8px;"></iframe>
+                    </div>
+                </div>
+
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading" onclick="display('sectionMapsgoldentemple')">Golden Temple</h1>
+                    <p class="detailed-view-card-description">
+                        The Golden Temple (also known as the Harimandir Sahib
+                        (lit. 'House of God', Punjabi pronunciation: [ɦəɾᵊmən̪d̪əɾᵊ saːɦ(ɪ)bᵊ])
+                        , or the Darbār Sahib, (lit. ''exalted court'', [d̪əɾᵊbaːɾᵊ saːɦ(ɪ)bᵊ
+                        ] or Suvaran Mandir[2]) is a gurdwara located in the city of Amritsar,
+                        Punjab, India.[3][4] It is the preeminent spiritual site of Sikhism.
+                        It is one of the holiest sites in Sikhism, alongside the Gurdwara Darbar Sahib Kartarpur in Kartarpur,
+                        and Gurdwara Janam Asthan in Nankana Sahib.
+                        The man-made pool on the site of the temple was completed
+                        by the fourth Sikh Guru, Guru Ram Das, in 1577.[6][7] In 1604,
+                        Guru Arjan Dev, the fifth Sikh Guru, placed a copy of the
+                        Adi Granth in Harmandir Sahib and is the prominent figure in the development
+                        of gurudwara who built it in the 16th century.
+                    </p>
+                    <img src="https://png.pngtree.com/png-clipart/20211219/original/pngtree-map-location-icon-png-image_6968979.png" alt="map" class="map-icon"/>
+                    <a href="https://www.google.com/maps/search/golden+temple+amritsar/@31.6204523,74.8741768,17z/data=!3m1!4b1?entry=ttu" target="_blank" class="map">map</a>
+        
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionVisitingPlaces')">
+                Back
+            </button>
+        </div>
+    </div>
+
+
+    <div id="sectionCharminarDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+                <div>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/uMQYbfgHVxk" allowfullscreen style="border: 2px solid rgb(red, green, blue); border-radius: 8px;"></iframe>
+                    </div>
+                </div>
+
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading" onclick="display('sectionMapscharminar')">Charminar</h1>
+                    <p class="detailed-view-card-description">
+                        The Charminar (lit. 'four minarets') is a monument located in Hyderabad,
+                        Telangana, India. Constructed in 1591, the landmark is a symbol of
+                        Hyderabad and officially incorporated in the emblem of Telangana.[3]
+                        The Charminar's long history includes the existence of a mosque on its
+                        top floor for more than 425 years. While both historically and religiously significant,
+                        it is also known for its popular and busy local markets surrounding the structure,
+                        and has become one of the most frequented tourist attractions in Hyderabad.
+                        Charminar is also a site of numerous festival celebrations, such as Eid-ul-adha
+                        and Eid al-Fitr,[4] as it is adjacent to the city's main mosque, the Makkah Masjid.
+                    </p>
+                    <img src="https://png.pngtree.com/png-clipart/20211219/original/pngtree-map-location-icon-png-image_6968979.png" alt="map" class="map-icon"/>
+                    <a href="https://www.google.com/maps/search/charminar/@17.3609299,78.4703152,16.88z?entry=ttu" target="_blank" class="map">map</a>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionVisitingPlaces')">
+                Back
+            </button>
+        </div>
+    </div>
+
+    <div id="sectionMunnarDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+                <div>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vUDx64AgSNU" style="border: 2px solid rgb(red, green, blue); border-radius: 8px;"></iframe>
+                    </div>
+                </div>
+
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading" onclick="display('sectionMapsMunnar')">Munnar</h1>
+                    <p class="detailed-view-card-description">
+                        Munnar rises as three mountain streams merge - Mudrapuzha,
+                        Nallathanni and Kundala. 1,600 m above sea level, this hill station
+                        was once the summer resort of the erstwhile British Government in South India.
+                        One of the most sought after honeymoon destinations in Kerala, Munnar is replete
+                        with resorts and lodging facilities that fit a wide rage of budgets. Sprawling tea
+                        plantations, picturesque towns, winding lanes and holiday facilities make this a popular resort town.
+                        Among the exotic flora found in the forests and grasslands here is the Neelakurinji.
+                        This flower which bathes the hills in blue once in every twelve years, will bloom next in 2030.
+                        Munnar also has the highest peak in South India, Anamudi, which towers over 2,695 m.
+                    </p>
+                    <img src="https://png.pngtree.com/png-clipart/20211219/original/pngtree-map-location-icon-png-image_6968979.png" alt="map" class="map-icon"/>
+                    <a href="https://www.google.com/maps/place/Munnar,+Kerala+685612/@10.0806489,77.0435783,14z/data=!4m15!1m8!3m7!1s0x3b0799794d099a6d:0x63250e5553c7e0c!2sMunnar,+Kerala+685612!3b1!8m2!3d10.0889333!4d77.0595248!16zL20vMDFydmpi!3m5!1s0x3b0799794d099a6d:0x63250e5553c7e0c!8m2!3d10.0889333!4d77.0595248!16zL20vMDFydmpi?entry=ttu" target="_blank" class="map">map</a>
+                
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionVisitingPlaces')">
+                Back
+            </button>
+        </div>
+    </div>
+</div>
+</div>
+
+</div>
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js">
+    </script>
+</body>
+
+</html>
